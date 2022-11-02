@@ -33,3 +33,16 @@ classDiagram
 ```
 - closer than association but looser than composite
 - parent child where the child can exist independently 
+
+## Inheritance
+
+```mermaid
+classDiagram
+  Title -- Genre
+  Title *-- Season
+  Title *-- Review
+  Title o-- Actor
+
+  TV Show --|> Title
+  Short --|> Title
+```
