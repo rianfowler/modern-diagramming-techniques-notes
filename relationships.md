@@ -46,3 +46,27 @@ classDiagram
   TV Show --|> Title
   Short --|> Title
 ```
+
+## Descriptions 
+```mermaid
+classDiagram
+  Title -- Genre: is associated with
+  Title *-- Season
+  Title *-- Review
+  Title o-- Actor
+
+  TV Show --|> Title: implements 
+  Short --|> Title
+```
+
+## Multiplicity 
+```mermaid
+classDiagram
+  Title "1..*" -- "1..*" Genre: is associated with
+  Title *-- Season
+  Title *-- Review
+  Title "0..*" o-- "1..*" Actor
+
+  TV Show --|> Title: implements 
+  Short --|> Title
+```
