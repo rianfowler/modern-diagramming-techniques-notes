@@ -7,7 +7,7 @@ sequenceDiagram
   actor B as Browser
   participant SUS as Sign up service
   participant US as user service
-  participant kafka
+  participant Kafka
   
   B->>SUS: Get /sign-up
   activate SUS
@@ -30,4 +30,5 @@ sequenceDiagram
       US-->>-SUS: 500 server error 
       SUS-->>-B: 500 server error (Error)
   end
+  link US: {"Repo": "https://www.example.com/repository"}
 ```
