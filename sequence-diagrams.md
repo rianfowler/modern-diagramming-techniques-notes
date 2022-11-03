@@ -23,7 +23,7 @@ sequenceDiagram
   else valid input 
     SUS->>+US: POST /users
     US--)Kafka: User created event published 
-    Note left of Kafka: this is a message bussy 
+    Note left of Kafka: this is a message bus 
     US-->>-SUS: 202 Created (User)
     SUS-->>B: 301 Redirect (Login page)
   else server crashed 
