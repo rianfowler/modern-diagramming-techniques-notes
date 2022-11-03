@@ -2,6 +2,7 @@
 
 ```mermaid
 sequenceDiagram
+  autonumber
   title User Signup flow
   actor B as Browser
   participant SUS as Sign up service
